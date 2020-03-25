@@ -1,16 +1,22 @@
  let money = prompt("Ваш бюджет на месяц?");
  let time = prompt("Введите дату в формате YYYY-MM-DD");
- let question1 = prompt("Введите обязательную статью расходов в этом месяце");
- let question2 = prompt("Во сколько обойдется?");
+ 
  let appData = {
     budget: money,
     timeData: time,
-    expenses: {
-       question1 : question2,
-    },
+    expenses: {},
     optionalExpenses: {},
     income: [],
     savings: false,
  };
- alert(appData.budget / time);
- console.log("Ваш бюджет на 1 день", appData.budget / time);
+ let question1 = prompt("Введите обязательную статью расходов в этом месяце");
+ let question2 = prompt("Во сколько обойдется?");
+ let question3 = prompt("Введите обязательную статью расходов в этом месяце");
+ let question4 = prompt("Во сколько обойдется?");
+
+ appData.expenses[question1] = question2;
+ appData.expenses[question3] = question4;
+
+
+ alert(appData.budget / 30);
+ console.log("Ваш бюджет на 1 день", appData.budget / 30);
