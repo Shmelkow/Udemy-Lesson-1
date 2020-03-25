@@ -1,0 +1,15 @@
+{
+  "name": "course__javascript",
+  "version": "1.0.0",
+  "description": "udemy course javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "p.shmelkow",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3"
+  }
+}
